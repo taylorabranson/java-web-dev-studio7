@@ -9,22 +9,25 @@ public class CD extends BaseDisc implements OpticalDisc{
 
     @Override
     public void spinDisc() {
-
+        System.out.println("The disc is spinning now.");
     }
 
     @Override
     public void readData() {
-
+        ArrayList<String> data = getContents();
+        for (int i = 0; i < data.size(); i++) {
+            System.out.println(data.get(i));
+        }
     }
 
     @Override
     public void ejectDisc() {
-
+        System.out.println("The disc has been ejected.");
     }
 
     @Override
     public void loadDisc() {
-
+        System.out.println("The disc has been inserted.");
     }
 
     // TODO: Implement your custom interface.
