@@ -9,7 +9,7 @@ public class DVD extends BaseDisc implements OpticalDisc {
 
     @Override
     public void spinDisc() {
-        System.out.println("The disc is spinning now.");
+        System.out.println("The DVD is spinning now.");
     }
 
     @Override
